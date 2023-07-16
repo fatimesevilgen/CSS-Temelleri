@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Durum Seçici</title>
+        <!-- Belli bir duruma sahip HTML komutunu seçer.
+        Örneğin ziyaret edilmiş durumdaki linkler için  visited komutu kullanılır." name="" id="">
+        -->
+        <style>
+            a{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+            }
+            a:link{
+                color: blue;
+
+            }
+            a:visited{
+                color: blueviolet;
+            }
+
+            a:hover{
+                color: aqua;
+            }
+            a:active{
+                color: red;
+            }
+
+
+            #kutu{
+                width: 200px;
+                height: 100px;
+                border: darkcyan solid 2px;
+            }
+            #kutu:hover{
+                background-color: brown;
+            }
+            .kutu2{
+                color: cyan;
+                font-size: large;
+            }
+
+            .kutu2:hover{
+                background-color: chocolate;
+                font-style: italic;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+
+        <a href="#">AnaSayfa</a><br>
+        <a href="#">Ben kimim</a> <br>
+        <a href="#">Portolyo</a><br>
+        <a href="#">İletişim</a>
+
+        <div id="kutu">
+            Kutu
+        </div>
+        <div class="kutu2">Merhaba</div>
+       
+    </body>
+</html>
