@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Öğreniyorum </title>
+        <style>
+            body{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: rgb(7, 0, 10);
+                font-weight: bold;
+            }
+            #formkutusu{
+                border:darkorchid solid 2px;
+                border-radius: 10px;
+                background-color: rgb(122, 233, 128);
+                padding: 20px;
+                margin-top: 15px;
+            }
+            input{
+                border: rgb(238, 143, 19) solid 2px;
+                color: rgb(1, 4, 15);
+                padding: 5px;
+                margin: 5px;
+                background-color: pink;
+            }
+            input:focus{
+                background-color: powderblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="formkutusu">
+            <form>
+                <table>
+                    <tr><td>Ad Soyad:</td><td><input type="text"></td></tr>
+                    <tr><td>Yaş:</td><td><input type="number"></td></tr>
+                    <tr><td></td><td><input type="submit"><input type="reset"></td></tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
