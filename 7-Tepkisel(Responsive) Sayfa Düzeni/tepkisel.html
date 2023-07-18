@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Öğreniyorum </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+                padding: 0px;
+                margin: 0px;
+            }
+            /* kutu genişlikleri*/
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+
+            /* "col-" sınıfı uygulanmış HTML komutlarını seç*/
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+                border: 1px solid red;
+            }
+
+            /* satırları yan yana gelmesin */
+            .row::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            /* 768px den küçük ekranlarda kutu genişliği %100 olsun*/
+            @media screen and (max-width: 768px) {
+                [class*="col-"]{
+                    width: 100px;
+                }
+            }
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="row1" class="row">
+            <div id="logo" class="col-2">
+                <img src="https://static.wikia.nocookie.net/theamazingworldofgumball/images/1/1d/Carrie1.png/revision/latest/scale-to-width-down/1200?cb=20160615033409">
+            </div>
+            <div id="anamenu" class="col-10">
+                ANAMENU
+            </div>
+        </div>
+        <div id="row2" class="row">
+            <div id="içerik"  class="col-9">
+                ICERIK
+            </div>
+            <div id="yanmenu" class="col-3">
+                YANMENU
+            </div>
+        </div>
+        <div id="row3" class="row">
+            <div id="altsol" class="col-4">
+                ALTSOL
+            </div>
+            <div id="altorta" class="col-4">
+                ALTORTA
+            </div>
+            <div id="altsag" class="col-4">
+                ALTSAG
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
