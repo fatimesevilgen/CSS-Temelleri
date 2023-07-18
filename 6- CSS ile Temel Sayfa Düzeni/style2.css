@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#container{
+    border: rgb(212, 180, 197) solid 3px;
+    width: 90%;
+    margin: auto;
+}
+#logo{
+    border: springgreen dashed 1px;
+    width: 100%;
+    height: 50px;
+}
+#anamenu{
+    border: rgb(189, 129, 129) dashed 1px;
+    width: 100%;
+    height: 50px;
+    background-color: greenyellow;
+}
+#icerik{
+    border: rgb(231, 222, 166) dotted 1px;
+    width: 70%;
+    min-height: 500px;
+    background-color: grey;
+    float: left;
+    
+}
+#yanmenu{
+    border: rgb(199, 231, 150) solid 1px;
+    width: 30%;
+    min-height: 500px;
+    background-color: indianred;
+    float: left;
+}
+#altmenu{
+    border: indigo dashed 1px;
+    width: 100%;
+    height: 50px;
+    background-color: ivory;
+    float: left;
+}
+
+
